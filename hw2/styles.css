@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+h1 {
+    color: rgb(1, 160, 1);
+    font-style: bold;
+    text-align: center;
+}
+h3 {
+    color: rgb(1, 160, 1); 
+    text-align: center;
+}
+h4 {
+    color: green;
+    font-style: bold;
+    font-family: serif;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-left: 10em;
+    padding-right: 10em;
+    /* word-wrap: break-word; */
+}
+.first_block {
+    width: 250px;
+    height: 300px;
+    background: rgb(205, 221, 236);
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+    color: green;
+    white-space: nowrap;
+}
+.packet_name_free {
+    color: rgb(1, 160, 1);
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-top: 5px;
+}
+.inner_field_free, .inner_field_pro, .inner_field_premium {
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: solid;
+    border-color: grey;
+    margin-bottom: 25px;
+    padding-bottom: 6px;
+}
+.price_free {
+    color: rgb(1, 160, 1);
+    font-style: bold;
+    font-size: medium;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.btn_activate_free {
+    height: 30px;
+    width: 160px;
+    align-items: center;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    border: grey;
+    font-family: 'PT Serif', serif;
+}
+.second_block {
+    width: 250px;
+    height: 300px;
+    background: rgb(205, 221, 236);
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+    color: blue;
+    white-space: nowrap;
+}
+.packet_name_pro {
+    color:blue;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-top:5px;
+}
+.price_pro {
+    color:blue;
+    font-style: bold;
+    font-size: medium;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+.btn_activate_pro {
+    height: 30px;
+    width:160px;
+    align-items: center;
+    background: blue;
+    color: white;
+    border-radius:5px;
+    border: grey;
+    font-family: 'PT Serif', serif;
+}
+.third_block {
+    width: 250px;
+    height: 300px;
+    background: rgb(205, 221, 236);
+    border:solid;
+    border-color: grey;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+    color: orange;
+    white-space: nowrap;
+}
+.packet_name_premium {
+    color:orange;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-top:5px;
+}
+.price_premium {
+    color:orange;
+    font-style: bold;
+    font-size: medium;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.btn_activate_premium {
+    height: 30px;
+    width:160px;
+    background: orange;
+    color: white;
+    border-radius:5px;
+    border: grey;
+    font-family: 'PT Serif', serif;
+}
+.free_plan {
+    width: fit-content;
+    height: fit-content;
+    margin: 50px;
+}
+.field_compare{
+    display: flex;
+    justify-content: center;
+}
+.btn_compare {
+    /* margin-top: 2em; */
+    margin: 0 auto;
+    height: 3em;
+    width: 18em;
+    /* width: 270px; */
+    background: rgb(94, 94, 94);
+    color: rgb(172, 218, 172);
+    border-radius: 5px;
+    border: grey;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+    font-size: small;
+}
+@media screen and (max-width: 760px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-left: 0 auto;
+        margin-right: 0 auto; */
+    }
+    .btn_compare {
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin-top: 2em; */
+        /* margin: 0 auto; */
+        height: 3em;
+        width: 18em;
+        /* width: 270px; */
+        background: rgb(94, 94, 94);
+        color: rgb(172, 218, 172);
+        border-radius: 5px;
+        border: grey;
+        align-items: center;
+        font-family: 'PT Serif', serif;
+        font-size: small;
+    }
+}
