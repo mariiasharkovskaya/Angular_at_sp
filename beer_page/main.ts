@@ -1,4 +1,4 @@
-const getCards = async(): Promise<void> => {
+const getCard = async(): Promise<void> => {
     const response: Response = await fetch(`https://api.punkapi.com/v2/beers`)
     let content: JSON = await response.json()
     for (let beer in content) {
@@ -16,4 +16,4 @@ const getCards = async(): Promise<void> => {
         `
     }
 }
-getCards()
+getCard()
