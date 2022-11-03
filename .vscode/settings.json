@@ -1,6 +1,6 @@
 {
     "typescript.validate.enable": true,
-    "target": "ES5",
+    "target": "ES2015",
     "compilerOptions": {
       "lib": [
         "es2015",
