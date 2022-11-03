@@ -25,6 +25,5 @@ const getCard = () => __awaiter(void 0, void 0, void 0, function* () {
          </div>
         `;
     }
-    console.log(content);
 });
 getCard();
