@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-var getCard = function () { return __awaiter(_this, void 0, void 0, function () {
+var getCards = function () { return __awaiter(_this, void 0, void 0, function () {
     var response, content, beer;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -52,4 +52,4 @@ var getCard = function () { return __awaiter(_this, void 0, void 0, function () 
         }
     });
 }); };
-getCard();
+getCards();
