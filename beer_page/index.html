@@ -6,10 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="C:\Users\Mary\beer_page\main1.js" defer></script>
+    <script src="C:\Users\Mary\beer_page\main1.js"></script>
 </head>
 <body>
-<!-- <script src="C:\Users\Mary\beer_page\main.js"></script> -->
+    <script> 
+        async function getBeer() {
+            let response = await fetch(`https://api.punkapi.com/v2/beers`)
+            let content = await response.json()
+            let beer;
+            for (beer in content) {
+                document.body.innerHTML += ` 
+                <div class="card">
+                    <div class="id">${content[beer].id}</div>
+                    <div class="name">${content[beer].name}</div>
+                    <div class="tagline">${content[beer].tagline}</div>
+                    <div class="contain">
+                    <div class="image"><img src="${content[beer].image_url}"></div>
+                    <div class="description">${content[beer].description}</div>
+                    </div>
+                    <div class="first_brewed">${content[beer].first_brewed}</div>
+                </div>
+                `
+            }
+        }
+        getBeer()
+    </script>
+<!-- <script src="C:\Users\Mary\beer_page\main1.js"></script> -->
 </body>
 </html>
 
