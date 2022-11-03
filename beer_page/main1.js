@@ -1,4 +1,4 @@
-async function getBeers() {
+async function getBeer() {
     let response = await fetch(`https://api.punkapi.com/v2/beers`)
     let content = await response.json()
     // let list = document.querySelector('.posts')
@@ -18,4 +18,4 @@ async function getBeers() {
         `
     }
 }
-getBeers()
+getBeer()

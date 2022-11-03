@@ -1,8 +1,6 @@
-const getBeer = async(): Promise<string> => {
-    const response = await fetch(`https://api.punkapi.com/v2/beers`)
-    let content: any = await response.json()
-    return content;
-    let beer: number; 
+const getCards = async(): Promise<void> => {
+    const response: Response = await fetch(`https://api.punkapi.com/v2/beers`)
+    let content: JSON = await response.json()
     for (let beer in content) {
         document.body.innerHTML += `
         <div class="card">
@@ -18,4 +16,4 @@ const getBeer = async(): Promise<string> => {
         `
     }
 }
-getBeer()
+getCards()

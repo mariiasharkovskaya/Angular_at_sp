@@ -1,0 +1,13 @@
+{
+    "typescript.validate.enable": true,
+    "target": "ES5",
+    "compilerOptions": {
+      "lib": [
+        "es2015",
+        "deno.ns",
+        "DOM",
+        "es5", 
+        "scripthost"
+      ],
+    },
+}
