@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "angular1",
+			"path": "../.."
+		},
+		{
+			"name": "Angular_at_sp",
+			"path": "../../Angular_at_sp"
+		}
+	],
+	"settings": {
+		"typescript.validate.enable": true
+	}
+}
